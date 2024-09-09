@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test1 :first-child{
+            color: red;
+        }
+        #test1 :last-child{
+            color: blue;
+        }
+        #test1 :nth-child(3){
+            color: aqua;
+        }
+        #test2 :last-of-type{
+            color: pink;
+        }
+        #test2 :nth-last-of-type(3){
+            color: yellow;
+        }
+
+        #test3:hover:before{
+            content: "좋은 아침";
+            color: red;
+        }
+        #test3:hover{
+            color: blue;
+        }
+        #test3::after{
+            content: "접니다";
+        }
+        #test3:active{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>일반 구조 선택자</h2>
+    <p>특정한 위치에 있는 태그 선택(위치로 구분)</p>
+    <div id="test1">
+        <p>테스트1</p>
+        <p>테스트1</p>
+        <p>테스트1</p>
+        <p>테스트1</p>
+        <p>테스트1</p>
+        <p>테스트1</p>
+        <p>테스트1</p>
+    </div>
+    <hr>
+    <h2>형태 구조 선택자(태그별로 구분)</h2>
+    <p>특정한 위치에 있는 태그 선택(태그 별로 구분)</p>
+    <div id="test2">
+        <p>테스트2</p>
+        <p>테스트2</p>
+        <p>테스트2</p>
+        <p>테스트2</p>
+        <p>테스트2</p>
+        <p>테스트2</p>
+        <pre>테스트2</pre>
+    </div>
+    <hr>
+    <div id="test3">
+        안농하세요
+    </div>
+</body>
+</html>

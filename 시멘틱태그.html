@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: gray;
+            width: 500px;
+            height: 50px;
+            color: white;
+            text-align: center;
+        }
+        nav{
+            float: left;
+            width: 80px;
+            height: 300px;
+            background-color: red;
+        }
+        section{
+            width: 340px;
+            height: 300px;
+            background-color: greenyellow;
+            float: left;
+        }
+        article{
+            width: 300px;
+            height: 90px;
+            margin: auto;
+        }
+        .a1{
+            background-color: purple;
+        }
+        .a2{
+            background-color: fuchsia;
+        }
+        .a3{
+            background-color: rosybrown;
+        }
+        aside{
+            float: left;
+            width: 300px;
+            height: 80px;
+            background-color: orangered;
+        }
+        footer{
+            float: left;
+            width: 500px;
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    HTML5 의 레이아웃인 시멘틱 태그를 css 적용
+
+    header : 머리말과 주로 로그인 검색 메뉴가 존재
+    nav : 메뉴와 관련된 태그로 다른 사이트나 페이로 이동하느 ㄴ태그를 모아놓은 태그
+    section : 웹 화면의 컨텐츠가 들어가는 역역으로 주제별로 영역을 나누어 묶을때 사용하며 화면이
+    전환되는 것과 관련된 태그이다. 주제별로 article 태그를 묶어주는 태그이기도 하다.
+    article : 웹페이지의 내용이 들어가는 영역
+    aside : 사이드 바 본문와의 광고나 링크 모음 등을 담고 있는 태그
+    왼쪽이나 오른쪽에 존재
+    footer : 맨 아래쪽에 위치하는 태그로써 회사 저작권 연락처 관련 정보를 담고 있음
+    -->
+    <h1>페이지 레이아웃 설정</h1>
+    <hr>
+    <header>header</header>
+    <nav>nav</nav>
+    <section>section
+        <article class="a1">article</article>
+        <article class="a2">article</article>
+        <article class="a3">article</article>
+    </section>
+    <aside> aside</aside>
+    <footer>footer</footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+    자손 선택자 : 선택자 > 자손선택자{}
+    후손 선택자 : 선택자 후손선택자{}
+    -->
+    <style>
+        #test1>h4{
+            color: red;
+        }
+        #test1 ul{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>후손 선택자와 자손 선택자</h2>
+    <p>자손 선택자: 바로 아래의 요소, 후손 선택자 : 하위 요소 전부</p>
+
+    <div id="test1">
+        div의 텍스트 노드 입니다
+        <h4 name="test2"> 자손입니다</h4>
+        <h3 id="test3">저도 자손입니다</h3>
+   
+    <h4>저는 후손입니다</h4>
+    <ul>
+        <li>저는 ul의 자손이면서 div 후손</li>
+        <li>조는 ul의 자손이면서 div후손임</li>
+    </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: red;
+        }
+        span{
+            color: blue;
+        }
+        #idselect{
+            color: green;
+        }
+        [type="text"]{
+            color: brown;
+        }
+        span[name="spanName"]{
+            color: blueviolet;
+        }
+        .spanclass{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 기본 선택자</h1>
+    <p>선택자 란? <br>
+        특정한 html 태그를 선택할 때 사용하는 기능으로, 태그를
+        선택하여 원하는 스타일과 기능을 적용할 수 있다
+    </p>
+    <hr>
+    <h2>모든 선택자</h2>
+    <p>html 안의 모든 태그를 선택할 때 전체 선택자를 사용할 수 있다.</p>
+
+    <ul>
+        <li>테스트1</li>
+        <li>테스트2</li>
+        <li>테스트3</li>
+    </ul>
+    <h2>태그 선택자</h2>
+    <p>p {color:red;} 와같은 형태로 사용된다</p>
+    <span>태그 선택자입니다</span>
+    <hr>
+    <h2>아이디 선택자</h2>
+    <p> #아이디명{color:green;} 같은 형태로 사용된다</p>
+    <span id="idselect">id 선택자</span>
+    <hr>
+    <h2>속성 선택자</h2>
+    <p>[name="name"]{color:yellow}</p>
+    <span name="spanName">속성 선택자</span>
+    <input type="text" name="spanName">
+    <hr>
+    <h2>class 선택자</h2>
+    <p>.class{color:black}</p>
+    <span class="spanclass">클래스 선택자들</span>
+</body>
+</html>

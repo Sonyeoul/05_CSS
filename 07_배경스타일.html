@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            background-color: rgb(20, 40, 200);
+            background-color: rgba(20, 40, 200, 0.5);
+            background-color: hsl(120, 80%, 50%); /*색상/채도/명도*/
+            background-color: hsla(120, 80%, 50%,0.5);
+            background-color: #f2f2f2
+        }
+        #div-bg{
+            width: 50%;
+            background-color: beige;
+        }
+        .div-test{
+            background-color: white;
+            padding: 10px;
+            width: 50%;
+            border: 5px dashed black;
+        }
+        #div1{
+            background-clip: border-box;
+        }
+        #div2{
+            background-clip: padding-box;
+        }
+        #div3{
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>배경색과 배경 이미지</h1>
+    <pre>bady {background-color: 색상명 |rgb|rgba|hsl|16진수}
+        로 컬러를 참조할수있다
+    </pre>
+    <hr>
+    <h3>div영역 배경 테스트</h3>
+    <pre>div 영역을 설정하는 경우 배경색을 지정하기 위해서는
+     div의 배경색을 별도로 지정해야 한다.</pre>
+    <div id="div-bg">
+        꽃이 거친 쓸쓸한 것이다. 피가 같이, 얼마나 뭇 힘차게 우리 것은 눈이 아니한 있는가? 이는 얼마나 봄바람을 우리의 같지 힘있다. 인도하겠다는 가치를 그들의 거선의 쓸쓸하랴? 든 불어 피가 피부가 인생을 긴지라 봄바람이다. 그들은 이는 어디 인생에 이상의 커다란 이상 찾아다녀도, 스며들어 이것이다. 갑 보배를 거친 꾸며 자신과 끓는다. 인간에 이상 인류의 관현악이며, 것이다. 인간이 인생에 천지는 커다란 사라지지 칼이다.
+    </div>
+    <h3>배경 적용 범위 조정</h3>
+    <pre>div 영역의 배경 적용 범위를 지정할 때 background-clip 속성을 사용한다</pre>
+    <div class="div-test" id="div1">
+        꽃이 거친 쓸쓸한 것이다. 피가 같이, 얼마나 뭇 힘차게 우리 것은 눈이 아니한 있는가? 이는 얼마나 봄바람을 우리의 같지 힘있다. 인도하겠다는 가치를 그들의 거선의 쓸쓸하랴? 든 불어 피가 피부가 인생을 긴지라 봄바람이다. 그들은 이는 어디 인생에 이상의 커다란 이상 찾아다녀도, 스며들어 이것이다. 갑 보배를 거친 꾸며 자신과 끓는다. 인간에 이상 인류의 관현악이며, 것이다. 인간이 인생에 천지는 커다란 사라지지 칼이다.
+    </div>
+    <div class="div-test" id="div2">
+        꽃이 거친 쓸쓸한 것이다. 피가 같이, 얼마나 뭇 힘차게 우리 것은 눈이 아니한 있는가? 이는 얼마나 봄바람을 우리의 같지 힘있다. 인도하겠다는 가치를 그들의 거선의 쓸쓸하랴? 든 불어 피가 피부가 인생을 긴지라 봄바람이다. 그들은 이는 어디 인생에 이상의 커다란 이상 찾아다녀도, 스며들어 이것이다. 갑 보배를 거친 꾸며 자신과 끓는다. 인간에 이상 인류의 관현악이며, 것이다. 인간이 인생에 천지는 커다란 사라지지 칼이다.
+    </div>
+    <div class="div-test" id="div3">
+        꽃이 거친 쓸쓸한 것이다. 피가 같이, 얼마나 뭇 힘차게 우리 것은 눈이 아니한 있는가? 이는 얼마나 봄바람을 우리의 같지 힘있다. 인도하겠다는 가치를 그들의 거선의 쓸쓸하랴? 든 불어 피가 피부가 인생을 긴지라 봄바람이다. 그들은 이는 어디 인생에 이상의 커다란 이상 찾아다녀도, 스며들어 이것이다. 갑 보배를 거친 꾸며 자신과 끓는다. 인간에 이상 인류의 관현악이며, 것이다. 인간이 인생에 천지는 커다란 사라지지 칼이다.
+    </div>
+
+</body>
+</html>
